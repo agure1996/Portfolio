@@ -1,8 +1,7 @@
-/** GENERAL */
+/* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-/* Set margin and padding of the whole page to 0 initially*/
 * {
   margin: 0;
   padding: 0;
@@ -20,14 +19,14 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* Transition of links and buttons when clicked */
+/* TRANSITION */
 
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* Desktop Nav */
+/* DESKTOP NAV */
 
 nav,
 .nav-links {
@@ -41,9 +40,9 @@ nav {
 }
 
 .nav-links {
-  font-size: 1.5rem;
   gap: 2rem;
   list-style: none;
+  font-size: 1.5rem;
 }
 
 a {
@@ -59,16 +58,15 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
-/* Logo */
-
 .logo {
   font-size: 2rem;
 }
+
 .logo:hover {
   cursor: default;
 }
 
-/* Hamburger Menu  */
+/* HAMBURGER MENU */
 
 #hamburger-nav {
   display: none;
@@ -98,7 +96,7 @@ a:hover {
 .menu-links {
   position: absolute;
   top: 100%;
-  right: 0%;
+  right: 0;
   background-color: white;
   width: fit-content;
   max-height: 0;
@@ -148,12 +146,12 @@ a:hover {
   transform: none;
 }
 
-/* Sections */
+/* SECTIONS */
 
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 5rem;
+  margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -162,7 +160,7 @@ section {
   display: flex;
 }
 
-/* Profile Section css */
+/* PROFILE SECTION */
 
 #profile {
   display: flex;
@@ -171,18 +169,20 @@ section {
   height: 80vh;
 }
 
-
-.section_pic-container img {
-  border-radius: 10rem;
+.section__pic-container {
+  display: flex;
   height: 400px;
   width: 400px;
+  margin: auto 0;
 }
 
+.section__pic-container img{
+  border-radius: 40rem;
+}
 .section__text {
   align-self: center;
   text-align: center;
-  margin-top: -20rem;
-  padding: 5rem;
+  margin-bottom: 4rem;
 }
 
 .section__text p {
@@ -217,7 +217,7 @@ section {
   height: 2rem;
 }
 
-/* Buttons */
+/* BUTTONS */
 
 .btn-container {
   display: flex;
@@ -252,19 +252,20 @@ section {
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
 }
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
 
 .btn-color-2 {
   background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
   gap: 1rem;
 }
 
-/* About Section */
+/* ABOUT SECTION */
 
 #about {
   position: relative;
@@ -272,9 +273,8 @@ section {
 
 .about-containers {
   gap: 2rem;
-  margin-top: 2rem;
   margin-bottom: 2rem;
-  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .about-details-container {
@@ -288,10 +288,7 @@ section {
 }
 
 .about-pic {
-  border-radius: 10%;
-  width: 350px;
-  height: 250px;
-  padding: 1rem;
+  border-radius: 2rem;
 }
 
 .arrow {
@@ -300,7 +297,7 @@ section {
   bottom: 2.5rem;
 }
 
-.details-containers {
+.details-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -310,17 +307,21 @@ section {
   text-align: center;
 }
 
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
 .section__pic-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+.text-container {
+  text-align: center;
 }
-/* Experience section styling */
+/* EXPERIENCE SECTION */
 
 #experience {
   position: relative;
@@ -359,7 +360,7 @@ article .icon {
   cursor: default;
 }
 
-/* Projects section */
+/* PROJECTS SECTION */
 
 #projects {
   position: relative;
@@ -372,8 +373,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
 }
 
 .project-title {
