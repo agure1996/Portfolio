@@ -10,6 +10,14 @@
   #projects {
     height: fit-content;
   }
+
+  section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 10rem 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }    
 }
 
 @media screen and (max-width: 1200px) {
