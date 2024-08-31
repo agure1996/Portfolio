@@ -1,14 +1,27 @@
 /* Use Strict */
 
-const toggleMenu = () => {
 
-    const menu = document.querySelector('.menu-links')
+const date = new Date().getFullYear();
+
+const menu = document.querySelector('.menu-links')
     const icon = document.querySelector('.hamburger-icon')
 
+    const cp = document.querySelector('.cp');
+    const cpt = document.createTextNode(` ${date}`);
+
+    cp.append(cpt);
+    
+const toggleMenu = () => {
 
 
-    menu.classList.toggle("open")
     icon.classList.toggle("open")
+    menu.classList.toggle("open")
+    
+
 }
 
-toggleMenu();
+
+
+icon.addEventListener('onclick',toggleMenu());
+menu.addEventListener('onclick',toggleMenu());
+
